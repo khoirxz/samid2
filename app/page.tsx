@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import ProjectSection from "./partials/Project";
 
-import { siteConfig } from "@/config/site";
 import { METAINFOPROPS } from "@/app/types/meta";
 import { Image } from "@heroui/image";
 import { EXPERIENCEPROPS } from "./types/experience";
