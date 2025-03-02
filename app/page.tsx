@@ -120,9 +120,9 @@ export default async function Home() {
             </Link>
           )}
           ,
-          <Link className="underline" href="/#">
+          <a className="underline" href="resume.pdf" rel="noopener noreferrer">
             CV
-          </Link>
+          </a>
         </div>
       </div>
 

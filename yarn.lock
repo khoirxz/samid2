@@ -3776,6 +3776,16 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-layout-masonry@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-layout-masonry/-/react-layout-masonry-1.2.0.tgz#675e4032c11715a5b47da2de8e5c59ba0fd72a12"
+  integrity sha512-Nauk/lE+1boEDFonOea6zWXq4QduCS3p+bOsH2iYVSqs5RBtn6yyeeJnPN++EAZsrUNT3Blvlac1CcoHlJ98Vg==
+
+react-photo-view@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/react-photo-view/-/react-photo-view-1.2.7.tgz#7cebfd88f20665ac85de053e9980b492d0f66095"
+  integrity sha512-MfOWVPxuibncRLaycZUNxqYU8D9IA+rbGDDaq6GM8RIoGJal592hEJoRAyRSI7ZxyyJNJTLMUWWL3UIXHJJOpw==
+
 react-textarea-autosize@^8.5.3:
   version "8.5.7"
   resolved "https://registry.npmjs.org/react-textarea-autosize/-/react-textarea-autosize-8.5.7.tgz"
