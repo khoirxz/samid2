@@ -1,11 +1,11 @@
 import { gql, GraphQLClient } from "graphql-request";
 import Link from "next/link";
+import { Image } from "@heroui/image";
 
+import { EXPERIENCEPROPS } from "./types/experience";
 import ProjectSection from "./partials/Project";
 
 import { METAINFOPROPS } from "@/app/types/meta";
-import { Image } from "@heroui/image";
-import { EXPERIENCEPROPS } from "./types/experience";
 
 type Props = {
   MetaInfo: METAINFOPROPS;
@@ -19,6 +19,7 @@ const getData = async () => {
       headers: {
         "x-caisy-apikey": `${process.env.API_KEY}`,
       },
+      cache: "no-cache",
     }
   );
 
