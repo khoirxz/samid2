@@ -8,6 +8,9 @@ export interface METAINFOPROPS {
   tiktok: string;
   title: string;
   job: string;
+  drive: string;
+  instagram2: string;
+  youtube: string;
 }
 
 export interface Image {

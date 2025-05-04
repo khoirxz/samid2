@@ -6,6 +6,8 @@ import { EXPERIENCEPROPS } from "./types/experience";
 import ProjectSection from "./partials/Project";
 
 import { METAINFOPROPS } from "@/app/types/meta";
+import SocialSection from "./partials/socials";
+import SkillSection from "./partials/Skill";
 
 type Props = {
   MetaInfo: METAINFOPROPS;
@@ -39,6 +41,9 @@ const getData = async () => {
         facebook
         description
         job
+        drive
+        instagram2
+        youtube
       }
       allExperience(sort: { createdAt: DESC }) {
         edges {
@@ -82,15 +87,16 @@ export default async function Home() {
         <p className="text-gray-500">{MetaInfo.description}</p>
         <div className="flex flex-row gap-4 mt-3 flex-wrap">
           {MetaInfo.facebook && (
-            <Link
-              className="underline"
-              href={MetaInfo.facebook}
-              rel="noopener noreferrer"
-              target="_blank">
-              Facebook
-            </Link>
+            <>
+              <Link
+                className="underline"
+                href={MetaInfo.facebook}
+                rel="noopener noreferrer"
+                target="_blank">
+                Facebook
+              </Link>
+            </>
           )}
-          ,
           {MetaInfo.instagram && (
             <Link
               className="underline"
@@ -100,7 +106,6 @@ export default async function Home() {
               Instagram
             </Link>
           )}
-          ,
           {MetaInfo.tiktok && (
             <Link
               className="underline"
@@ -110,7 +115,6 @@ export default async function Home() {
               Tiktok
             </Link>
           )}
-          ,
           {MetaInfo.tiktok && (
             <Link
               className="underline"
@@ -120,16 +124,23 @@ export default async function Home() {
               Bussines
             </Link>
           )}
-          ,
           <a className="underline" href="resume.pdf" rel="noopener noreferrer">
             CV
           </a>
         </div>
       </div>
 
+      <SocialSection
+        drive={MetaInfo.drive}
+        youtube={MetaInfo.youtube}
+        instagram={MetaInfo.instagram2}
+      />
+
       <div>
-        <ProjectSection data={allExperience} />
+        <ProjectSection data={allExperience} />{" "}
       </div>
+
+      <SkillSection />
     </section>
   );
 }

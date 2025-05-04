@@ -5,12 +5,13 @@ export interface EXPERIENCEPROPS {
 export interface Node {
   id: string;
   thumbnail: Thumbnail[];
-  tiktok: string;
   title: string;
   years: string;
-  youtube: string;
   description: string;
-  link: string;
+  youtube: string | null;
+  instagram: string | null;
+  tiktok: string | null;
+  link: string | null;
 }
 
 export interface Thumbnail {
