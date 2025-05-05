@@ -85,11 +85,11 @@ export default function ProjectSection({
                 </div>
 
                 <PhotoProvider>
-                  <Masonry columns={2} gap={5}>
+                  <Masonry columns={2} gap={10}>
                     {item.node.thumbnail.map((img) => (
                       <Card
                         key={img.id}
-                        className="col-span-12 sm:col-span-4 shadow-none relative group">
+                        className="col-span-12 sm:col-span-4 shadow-none relative bg-transparent">
                         <PhotoView src={img.src}>
                           <Image
                             removeWrapper
@@ -98,11 +98,9 @@ export default function ProjectSection({
                             src={img.src}
                           />
                         </PhotoView>
-                        <CardFooter className="justify-between group-hover:bg-black/60 group-hover:opacity-100 overflow-hidden absolute before:rounded-b-xl rounded-b-large bottom-0 left-0 w-full h-[30%] z-10">
-                          <p className="group-hover:text-white text-transparent text-lg">
-                            {img.title}.
-                          </p>
-                        </CardFooter>
+                        <h1 className="my-2 font-semibold text-lg">
+                          {img.title}
+                        </h1>
                       </Card>
                     ))}
                   </Masonry>
