@@ -62,6 +62,7 @@ const getData = async () => {
             youtube
             description
             link
+            instagram
           }
         }
       }
