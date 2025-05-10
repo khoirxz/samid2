@@ -138,7 +138,7 @@ export default async function Home() {
       />
 
       <div>
-        <ProjectSection data={allExperience} />{" "}
+        <ProjectSection data={allExperience} />
       </div>
 
       <SkillSection />
